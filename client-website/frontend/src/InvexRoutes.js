@@ -1,0 +1,27 @@
+const InvexRoutes = {
+  Home: { path: "/" },
+  Symbol: { path: "/symbol/:symbol", path1: "/symbol/:symbol/:tab", path2: "/symbol/:symbol/:tab/:subId"},
+  Divident: { path: "/symbol/divident/:symbol" },
+  Earnings: { path: "/symbolearnings/:symbol" },
+  Options: { path: "/options" },
+  Screener: { path: "/screener" },
+  Sectors: { path: "/sectors" },
+  MacroEconomics: { path: "/macro-economics" },
+  Market: { path: "/market" },
+  News: { path: "/news" },
+  Resources: { path: "/resources" },
+  Dashboard: { path: "/dashboard" },
+  Login: { path: "/login" },
+  Register: { path: "/register" },
+  Profile: { path: "/profile" },
+  Subscription: { path: "/subscription" },
+  SymbolNotPublished: { path: "/not-published" },
+  PrivacyPolicy: { path: "/privacy-policy" },
+  RefundPolicy: { path: "/refund-policy" },
+  CookiePolicy: { path: "/cookie-policy" },
+  TermsAndConditionPolicy: { path: "/terms-and-condition" },
+  Portfolio: { path: "/portfolio" },
+  WatchList: { path: "/watchList/:name" },
+};
+
+export default InvexRoutes;

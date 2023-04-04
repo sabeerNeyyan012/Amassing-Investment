@@ -1,0 +1,11 @@
+
+{
+    "data": [
+        {"id": "1000","FirstName": "DAN","LastName": "Bamboo ","EmailId": "Product@Description.com","inventoryStatus": "ACTIVE"},
+        {"id": "1000","FirstName": "MIA","LastName": "Bamboo ","EmailId": "Product@Description.com","inventoryStatus": "INACTIVE"},
+        {"id": "1000","FirstName": "DUMMT","LastName": "Bamboo ","EmailId": "Product@Description.com","inventoryStatus": "ACTIVE"},
+        {"id": "1000","FirstName": "ALEDX","LastName": " Watch","EmailId": "Product@Description.com","inventoryStatus": "INACTIVE"},
+        {"id": "1000","FirstName": "SOMME","LastName": " Watch","EmailId": "Product@Description.com","inventoryStatus": "ACTIVE"}
+    ]
+}
+    

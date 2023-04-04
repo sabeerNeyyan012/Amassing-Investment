@@ -1,0 +1,13 @@
+
+{
+    "data": [
+        {"userId": "1","FirstName": "Dummy","LastName": "Dumb","Email": "dummy@gmail.com","Status": "Active"},
+        {"userId": "2","FirstName": "Jack","LastName": "Dumb","Email": "dummy@gmail.com","Status": "Active"},
+        {"userId": "3","FirstName": "Shaw","LastName": "Dumb","Email": "dummy@gmail.com","Status": "InActive"},
+        {"userId": "4","FirstName": "Dom","LastName": "Dumb","Email": "dummy@gmail.com","Status": "Active"},
+        {"userId": "5","FirstName": "Brian","LastName": "Dumb","Email": "dummy@gmail.com","Status": "InActive"},
+        {"userId": "6","FirstName": "Mia","LastName": "Dumb","Email": "dummy@gmail.com","Status": "Active"},
+        {"userId": "7","FirstName": "Something","LastName": "Dumb","Email": "dummy@gmail.com","Status": "InActive"}
+    ]
+}
+    
