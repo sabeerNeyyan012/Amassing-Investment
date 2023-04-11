@@ -10,6 +10,8 @@ import InvexLoader from "./component/Common/InvexLoader";
 import { Toast } from "./component/Common/Toast/Toast";
 import { Provider } from "react-redux";
 import { store } from "./redux/store/store";
+import Blogs from "./component/V2/Learn/Blogs";
+import EachTopic from "./component/V2/Learn/EachTopic";
 
 const GoToTop = lazy(() => import("./ScrollToTop"));
 // import GoToTop from './ScrollToTop';
@@ -155,15 +157,15 @@ function App() {
                 }
               />
               <Route element={<ProtectedRoute />}>
-              <Route
-                exact
-                path={InvexRoutes.Profile.path}
-                element={
-                  <>
-                    <UserProfile />
-                  </>
-                }
-              />
+                <Route
+                  exact
+                  path={InvexRoutes.Profile.path}
+                  element={
+                    <>
+                      <UserProfile />
+                    </>
+                  }
+                />
                 <Route
                   exact
                   path={InvexRoutes.SymbolNotPublished.path}
@@ -190,14 +192,14 @@ function App() {
                     }
                   >
                     <Route
-                    exact
-                    path={InvexRoutes.Symbol.path2}
-                    element={
-                      <>
-                        <Symbol />
-                      </>
-                    }
-                  />
+                      exact
+                      path={InvexRoutes.Symbol.path2}
+                      element={
+                        <>
+                          <Symbol />
+                        </>
+                      }
+                    />
                   </Route>
                 </Route>
 
@@ -240,15 +242,14 @@ function App() {
                     }
                   >
                     <Route
-                    exact
-                    path=":id"
-                    element={
-                      <>
-                        <Options />
-                      </>
-                    }
-                  >
-                  </Route>
+                      exact
+                      path=":id"
+                      element={
+                        <>
+                          <Options />
+                        </>
+                      }
+                    ></Route>
                   </Route>
                 </Route>
                 <Route
@@ -270,24 +271,24 @@ function App() {
                   }
                 >
                   <Route
-                  exact
-                  path=":tab"
-                  element={
-                    <>
-                      <Sector />
-                    </>
-                  }
-                >
-                  <Route
-                  exact
-                  path=":id"
-                  element={
-                    <>
-                      <Sector />
-                    </>
-                  }
-                />
-                </Route>
+                    exact
+                    path=":tab"
+                    element={
+                      <>
+                        <Sector />
+                      </>
+                    }
+                  >
+                    <Route
+                      exact
+                      path=":id"
+                      element={
+                        <>
+                          <Sector />
+                        </>
+                      }
+                    />
+                  </Route>
                 </Route>
                 <Route
                   exact
@@ -299,24 +300,24 @@ function App() {
                   }
                 >
                   <Route
-                  exact
-                  path=":tab"
-                  element={
-                    <>
-                      <MacroEconomics />
-                    </>
-                  }
-                >
-                  <Route
-                  exact
-                  path=":id"
-                  element={
-                    <>
-                      <MacroEconomics />
-                    </>
-                  }
-                />
-                </Route>
+                    exact
+                    path=":tab"
+                    element={
+                      <>
+                        <MacroEconomics />
+                      </>
+                    }
+                  >
+                    <Route
+                      exact
+                      path=":id"
+                      element={
+                        <>
+                          <MacroEconomics />
+                        </>
+                      }
+                    />
+                  </Route>
                 </Route>
                 <Route
                   exact
@@ -347,14 +348,14 @@ function App() {
                   }
                 >
                   <Route
-                  exact
-                  path=":tab"
-                  element={
-                    <>
-                      <News />
-                    </>
-                  }
-                />
+                    exact
+                    path=":tab"
+                    element={
+                      <>
+                        <News />
+                      </>
+                    }
+                  />
                 </Route>
 
                 <Route
@@ -376,26 +377,36 @@ function App() {
                     </>
                   }
                 />
-              <Route
-                exact
-                path={InvexRoutes.Portfolio.path}
-                element={
-                  <>
-                    <Portfolio />
-                  </>
-                }
-              />
-              <Route
-                exact
-                path={InvexRoutes.WatchList.path}
-                element={
-                  <>
-                    <WatchList />
-                  </>
-                }
-              />
+                <Route
+                  exact
+                  path={InvexRoutes.Portfolio.path}
+                  element={
+                    <>
+                      <Portfolio />
+                    </>
+                  }
+                />
+                <Route
+                  exact
+                  path={InvexRoutes.WatchList.path}
+                  element={
+                    <>
+                      <WatchList />
+                    </>
+                  }
+                />
               </Route>
-
+              <Route
+                exact
+                path={InvexRoutes.Blog.path}
+                element={<Blogs />}
+              ></Route>
+              <Route exact path="/:subject" element={<EachTopic />}></Route>
+              <Route
+                exact
+                path="/:subject/:topic"
+                element={<EachTopic />}
+              ></Route>
               {/* End ::  Routes */}
               <Route path="*" element={<NotFound />} />
             </Routes>

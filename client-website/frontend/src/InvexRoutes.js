@@ -1,6 +1,10 @@
 const InvexRoutes = {
   Home: { path: "/" },
-  Symbol: { path: "/symbol/:symbol", path1: "/symbol/:symbol/:tab", path2: "/symbol/:symbol/:tab/:subId"},
+  Symbol: {
+    path: "/symbol/:symbol",
+    path1: "/symbol/:symbol/:tab",
+    path2: "/symbol/:symbol/:tab/:subId",
+  },
   Divident: { path: "/symbol/divident/:symbol" },
   Earnings: { path: "/symbolearnings/:symbol" },
   Options: { path: "/options" },
@@ -22,6 +26,7 @@ const InvexRoutes = {
   TermsAndConditionPolicy: { path: "/terms-and-condition" },
   Portfolio: { path: "/portfolio" },
   WatchList: { path: "/watchList/:name" },
+  Blog: { path: "/blog" },
 };
 
 export default InvexRoutes;

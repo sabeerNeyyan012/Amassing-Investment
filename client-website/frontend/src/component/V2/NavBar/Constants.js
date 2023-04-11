@@ -32,4 +32,9 @@ export const HEADER_LIST = [
     value: "portfolio",
     redirect: InvexRoutes.Portfolio.path,
   },
+  {
+    label: "Blog",
+    value: "Blog",
+    redirect: InvexRoutes.Blog.path,
+  },
 ];

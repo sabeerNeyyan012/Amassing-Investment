@@ -1,0 +1,50 @@
+.blog-image {
+  width: 100%;
+  height: 200px;
+}
+.blog-date {
+  text-align: right;
+}
+.blog-desc {
+  text-align: justify;
+  color: #969b9d;
+}
+.blog-heading {
+  color: #0c7db6;
+  font-size: 30px;
+}
+.main-content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.top-background {
+  background-image: url("https://mg.co.za/wp-content/uploads/2023/01/f53b607f-forex.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  min-height: 250px;
+  text-align: center;
+}
+.select-chapter {
+  appearance: none;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.chapter-area {
+  background-color: #f0f7f7;
+}
+.next-btn {
+  padding: 15px;
+  min-width: 150px;
+}
+.video-frame {
+  width: 100%;
+  min-height: 350px;
+}
+.select-chapter option {
+  background-color: #fff;
+  padding: 50px;
+}
